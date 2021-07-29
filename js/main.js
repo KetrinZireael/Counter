@@ -6,7 +6,7 @@ let $increase = document.querySelector('#increase');
 let text = $number.textContent;
 let number = Number(text);
 
-$number.style.color = 'orange';
+$number.style.color = 'white';
 
 $decrease.addEventListener('click', decreaseFunction);
 $reset.addEventListener('click', resetFunction);
@@ -39,6 +39,6 @@ function setColor() {
     } else if (number > 0) {
         $number.style.color = 'green';
     } else if (number === 0){
-        $number.style.color = 'orange';
+        $number.style.color = 'white';
     }
 }
